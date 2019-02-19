@@ -23,18 +23,13 @@ line3 = $stdin.gets.chomp
 
 puts "I'm going to write these to the file."
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+target.write(line1, "\n", line2, "\n", line3, "\n")
 
 puts "And finally, we close it."
 target.close
 
 print "Let's now go ahead and see what you wrote!"
-print "What's the name of your file: "
+print "\nWhat's the name of your file: "
 filename = $stdin.gets.chomp
 
 txt = open(filename)
