@@ -18,7 +18,7 @@ print "line 1: "
 line1 = $stdin.gets.chomp
 print "line 2: "
 line2 = $stdin.gets.chomp
-print "line 3"
+print "line 3: "
 line3 = $stdin.gets.chomp
 
 puts "I'm going to write these to the file."
@@ -32,3 +32,15 @@ target.write("\n")
 
 puts "And finally, we close it."
 target.close
+
+print "Let's now go ahead and see what you wrote!"
+print "What's the name of your file: "
+filename = $stdin.gets.chomp
+
+txt = open(filename)
+
+puts "Here's what #{filename} says: "
+print txt.read
+
+puts "Let's now close the file."
+txt.close
