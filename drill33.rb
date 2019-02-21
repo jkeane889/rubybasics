@@ -1,5 +1,12 @@
 # Here we generate a random number in Ruby
-x = rand (100)
+cars_on_road = []
+
+def traffic_on_street(car)
+
+  x = rand(100)
+
+
+
 
 # Next, we define our function, parking space counter
 def parking_space_Counter(car)
